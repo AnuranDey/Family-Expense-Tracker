@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AppPageStyle2.css">
+    <title>App Page</title>
+</head>
+
+<body>
+    <header>
+        <div id="NameDisplay">
+            <h2>Welcome NameOfTheUser</h2>
+            <h3><span id="time"></span></h3>
+        </div>
+        <div id="key">SpecialKey goes here</div>
+    </header>
+    <main>
+        <div id="total">
+            <marquee behavior="normal" direction="left">
+                <h2>Your Total Expense: <span id="totalspan"></span></h2>
+            </marquee>
+        </div>
+        <div class="outer">
+            <h3>Food</h3>
+            <form action="http://127.0.0.1:3000/dashboard" method="post">
+                <div class="inner">
+                    <section>
+                        <label for="spent">Amount:</label><br>
+                        <input type="number" id="spent" name="spent" placeholder="Enter the amount" required>
+                    </section>
+                    <section>
+                        <label for="spent_on">Type of Food</label><br>
+                        <input type="text" id="spent_on" name="spent_on" placeholder="What did you eat" required>
+                    </section>
+                    <section>
+                        <label for="">Date</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </section>
+                    <section id="button">
+                        <button>Save</button>
+                    </section>
+                </div>
+            </form>
+        </div>
+        <div class="outer">
+            <h3>Clothing</h3>
+            <form action="http://127.0.0.1:3000/dashboard" method="post">
+                <div class="inner">
+                    <section>
+                        <label for="spent">Amount:</label><br>
+                        <input type="number" id="spent" name="spent" placeholder="Enter the amount" required>
+                    </section>
+                    <section>
+                        <label for="spent_on">What did you buy?</label><br>
+                        <input type="text" id="spent_on" name="spent_on" placeholder="What did you eat" required>
+                    </section>
+                    <section>
+                        <label for="">Date</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </section>
+                    <section id="button">
+                        <button>Save</button>
+                    </section>
+                </div>
+            </form>
+        </div>
+        <div class="outer">
+            <h3>EMIs/Loans</h3>
+            <form action="http://127.0.0.1:3000/dashboard" method="post">
+                <div class="inner">
+                    <section>
+                        <label for="spent">Amount:</label><br>
+                        <input type="number" id="spent" name="spent" placeholder="Enter the amount" required>
+                    </section>
+                    <section>
+                        <label for="spent_on">For What?</label><br>
+                        <input type="text" id="spent_on" name="spent_on" placeholder="What did you eat" required>
+                    </section>
+                    <section>
+                        <label for="">Date</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </section>
+                    <section id="button">
+                        <button>Save</button>
+                    </section>
+                </div>
+            </form>
+        </div>
+        <div class="outer">
+            <h3>Miscellaneous</h3>
+            <form action="http://127.0.0.1:3000/dashboard" method="post">
+                <div class="inner">
+                    <section>
+                        <label for="spent">Amount:</label><br>
+                        <input type="number" id="spent" name="spent" placeholder="Enter the amount" required>
+                    </section>
+                    <section>
+                        <label for="spent_on">Spent in what?</label><br>
+                        <input type="text" id="spent_on" name="spent_on" placeholder="What did you eat" required>
+                    </section>
+                    <section>
+                        <label for="">Date</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </section>
+                    <section id="button">
+                        <button>Save</button>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="logic.js"></script>
+</body>
+
+</html>
